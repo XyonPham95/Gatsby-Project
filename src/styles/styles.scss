@@ -1,0 +1,96 @@
+$font: 'Muli',
+'Poppins';
+
+//Color:
+$white: #ffffff;
+$black: #000;
+$blue: #334CCB;
+$smoke-white: #F2F7FE;
+$bright-white: #F1F1F1;
+$off-white: #f2f4f5;
+$dark-blue: #0B217B;
+
+html,
+body {
+  font-family: $font;
+  font-size: 16px;
+}
+
+.container {
+  width: 1640px;
+  min-width: 1640px;
+  margin: 0 auto;
+
+  @media (max-width:1440px) {
+    width: 1280px;
+    min-width: 1280px;
+  }
+
+  @media (max-width:1280px) {
+    width: 976px;
+    min-width: 976px;
+  }
+
+  @media (max-width:976px) {
+    width: 768px;
+    min-width: 768px;
+  }
+}
+
+//Header
+header {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 10;
+
+  .inner-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+
+    .logo {
+      a {
+        letter-spacing: 1.5px;
+        text-decoration: none;
+        font-family: "Poppins";
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        line-height: 26px;
+        color: $blue;
+      }
+    }
+
+    .navigation {
+      nav {
+        a {
+          margin: 0 20px;
+          text-decoration: none;
+          letter-spacing: 1.75px;
+          font-family: "Muli";
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 26px;
+          color: $dark-blue;
+
+          &:last-child {
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Banner
+.banner {
+  position: absolute;
+  width: 1440px;
+  height: 684px;
+  left: 0px;
+  top: 80px;
+  background: red;
+}
